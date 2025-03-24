@@ -1,1 +1,24 @@
+import random
 
+
+
+def main():
+    streak = 0
+
+    while streak < 3 :
+        print("YOUNG ACHIEVER LEARNING LAB")
+        num1 = random.randint(10,99)
+        num2 = random.randint(10,99)
+        answer = num1 + num2
+        
+    
+        print("What is", num1, "+", num2, "?")
+        user_input = int(input("Your answer:"))
+
+        if user_input == answer:
+            print("Correct!")
+            streak += 1 
+            print("You've gotten", streak, "correct in a row")
+        else: 
+            print("Incorrect.", "The expected answer is ", answer)
+            streak = 0
