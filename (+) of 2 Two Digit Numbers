@@ -22,3 +22,9 @@ def main():
         else: 
             print("Incorrect.", "The expected answer is ", answer)
             streak = 0
+
+
+    
+    
+if __name__ == '__main__':
+    main()
